@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_application</title>
+    <style>
+       .box{
+        background-color: sandybrown;
+        padding: 15px;
+        text-align: left;
+       }
+       .thirdbox{
+        background-color: sandybrown;
+        padding: 15px;
+        text-align: right;
+        padding-right: 25px;
+        
+       }
+       
+
+       .secondbox{
+        background-color:aquamarine;
+        padding: 15px;
+        color:black;
+        text-align: left;
+       }
+
+       #submit{
+        background-color:green;
+        cursor: pointer;
+
+       }
+       #cancel{
+        background-color: red;
+        cursor: pointer;
+       }
+
+
+    </style>
+</head>
+<body >
+    <div class="box">
+      <b>sign up</b>
+    </div>
+
+    <div class="secondbox">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter First Name"></p>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter Last Name"></p>
+        <label for="date">Date of Birth </label>
+        <input type="datetime-local">    
+        </select></p>
+        <label for="gender">Gender</label>
+        <input type="radio"name="gender" id="gender"> Male
+        <input type="radio" name="gender" id="gender"> Female </p>
+        <label for="country" class="country">Country </label>
+        <select id="country">
+            <option>country</option>
+            <option value="">india</option>
+            <option value="">america</option>
+            <option value="">dubai(UAE)</option>
+        </select></p>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Enter E-mail"></p>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter Phone"></p>
+        <label for="password">Password</label>
+        <input type="password" id="password"></p>
+        <label for="password">Confirm Password</label>
+        <input type="password" id="password"></p>
+        <label id="checkbox" for="checkbox">I Agree to the Term of use</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+    </div>
+
+    <div class="thirdbox">
+    <button id="submit" type="submit">Submit</button>
+            <button id="cancel">Cancel</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        
+        .container{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            background-color: aquamarine;
+            margin: 60px;
+            transition-duration:0.1s ;
+        }
+        .container:hover{
+            background-color: blueviolet;
+            cursor: pointer;
+            height: 250px;
+            width: 250px;
+            border-radius: 50px;
+            transform: rotate(45deg);
+            border: 5px solid ;
+            outline: 20px solid blue;
+            outline-width: 13px;
+        }
+        .mainbox{
+            float: left;
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="container">
+
+        </div>
+        <div class="container">
+    
+        </div>
+        <div class="container">
+    
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+</body>
+</html>

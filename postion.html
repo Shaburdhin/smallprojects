@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacking</title>
+  <style>
+    .firstbox{
+      height: 500px;
+      width: 500px;
+      background-color: aqua;
+      border: 2px solid ;
+      position: relative;
+      z-index: -2;
+    }
+    .secondbox{
+      height: 500px;
+      width: 500px;
+      background-color: rgb(201, 51, 193);
+      border: 2px solid;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      z-index: -1;
+
+      
+    }
+    .thirdbox{
+      height: 800px;
+      width: 800px;
+      background-color: rgb(30, 153, 46);
+      border: 2px solid;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      z-index: -3;
+    }
+    
+
+    h1{
+      color: blue;
+      background-color: brown;
+      display: inline-block;
+      font-size: 60px;
+      position: fixed;
+      top: 90px;
+      left:50px;
+      z-index: -0;
+
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <section class="thirdbox">
+      
+  </section>
+  <section class="firstbox">
+    
+  </section>
+  <section class="secondbox">
+      
+  </section>
+  <div>
+   <b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impeditbr
+     fugit veritatis nam similique quam eos voluptatibus voluptatum mollitia nobis animibr
+      hic rerum minima inventore, harum eius aliquid dolores at explicabo.</b>
+  </div>
+</body>
+</html>
+

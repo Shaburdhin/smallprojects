@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      button{
+        cursor: pointer;
+        color: aqua;
+        background-color: black;
+      }
+      body{
+        margin: 0%;
+        height: 100vh;
+
+        background-image: url(https://wallpapers.com/images/hd/best-desktop-pc-background-yl57pwibcq8tk2b6.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+
+      }
+      .oneq{
+        margin-top: 200px;
+        backdrop-filter: blur(55px);
+        display: inline-block;
+        text-align: center;
+        height: 220px;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: 5px solid rgb(69, 129, 69);
+        border-radius: 5%;
+      }
+    </style>
+</head>
+<body class="body">
+
+  <center>
+    
+  <div class="oneq">
+    <h1>Calculator for addition only</h1>
+    <label for="">value1</label>
+    <input id="num1" type="text" value=""><br><br>
+    <label for="">value2</label>
+  <input id="num2" type="text" value=""><br><br>
+  <button onclick="addition()">click here</button><br><br>
+  <b id="res">Result</b>
+  </div>
+  </center>
+<body>
+<script>
+var a = document.getElementById("num1")
+var b = document.getElementById("num2")
+var c = document.getElementById("res")
+
+function addition(){
+  var ab = Number(a.value)
+  var bc = Number(b.value)
+
+  var total = ab+bc
+  c.textContent = total
+}
+
+</script>
+</html>
